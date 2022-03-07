@@ -7,7 +7,7 @@ pipeline {
 
     stages {
        stage('Run Tests') {
-          paralel { 
+          parallel { 
 		    stage('Backend Tests'){
 		       steps {
 			 sh 'node ./backend/test.js'
